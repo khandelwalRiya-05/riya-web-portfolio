@@ -1,0 +1,105 @@
+.education-section {
+  background: var(--bg-subtle);
+}
+
+.edu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edu-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.edu-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent-light), rgba(124, 58, 237, 0.08));
+  border: 1px solid rgba(29, 78, 216, 0.2);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.edu-body {
+  flex: 1;
+}
+
+.edu-degree {
+  font-size: 19px;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.edu-inst {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.edu-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.edu-meta-item,
+.edu-cgpa {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.edu-cgpa strong {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.edu-badge {
+  text-align: center;
+  background: linear-gradient(135deg, var(--accent), var(--accent-3));
+  border-radius: 14px;
+  padding: 16px 20px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.edu-badge-value {
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.edu-badge-label {
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.85;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .edu-card {
+    flex-wrap: wrap;
+  }
+  .edu-badge {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+  .edu-badge-value { font-size: 24px; margin-bottom: 0; }
+}
